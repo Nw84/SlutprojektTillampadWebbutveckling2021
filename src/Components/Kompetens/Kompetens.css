@@ -1,0 +1,155 @@
+.kompetens-wrapper {
+    background-color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0.2rem 0.8rem rgba(0,0,0,0.2);
+}
+
+.kompetens-inrewrapper {
+    padding: 2rem;
+}
+
+.kompetens-wrapper .kompetens-innehall{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.kompetens-ovre {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.kompetens-underrubrik {
+    font-weight: bold;
+}
+
+.kompetens-vanster {
+    width: calc(50% - 25px);
+}
+
+.kompetens-hoger {
+    width: calc(50% - 25px);
+    font-weight: bold;
+}
+
+.storStapel {
+    height: 5px;
+    width: 100%;
+    background-color: #ccddff;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.storStapel::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+
+.stapel {
+    height: 5px;
+    width: 100%;
+    background-color: #ccddff;
+    position: relative;
+}
+
+.html::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.css::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.java::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.react::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.mysql::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.php::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    left: 0;
+    top: 0;
+    background: #ff7733;
+}
+
+.kompetens-info {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+@media(max-width:480px) {
+    .kompetens-innehall {
+        font-size: 6px;
+    }
+    .kompetens-subheading {
+        font-size: 10px;
+    }
+  }
+
+@media(min-width:1400px) {
+    .kompetens-innehall {
+        font-size: 14px;
+    }
+}
+
+@media(min-width:1536px) {
+    .kompetens-innehall  {
+        font-size: 16px;
+    }
+}
+
+@media(min-width:2400px) {
+    .kompetens-innehall  {
+        font-size: 20px;
+    }
+}
+

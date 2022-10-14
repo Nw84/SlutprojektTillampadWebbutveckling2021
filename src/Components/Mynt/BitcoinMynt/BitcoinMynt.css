@@ -1,0 +1,27 @@
+.Bitcoin-mynt {
+    position: absolute; 
+    display: block;
+    height: 8rem;
+    width: 8rem;
+    background-color: #e2af38;;
+    border-radius: 50%;
+    box-shadow: 0 0px 5px rgba(104, 104, 104, 0.8);
+}
+
+.Bitcoin-ikon {
+    font-size: 130px;
+    z-index: 1000;
+    color: #ffd268;;
+    top: -0.1rem;
+    left: -0.05rem;
+    position: absolute;
+    opacity: 0.8;
+}
+
+@media (min-width: 1536px) {
+    .Bitcoin-ikon {
+        top: -0.05rem;
+        left: -0.05rem;
+    }
+}
+

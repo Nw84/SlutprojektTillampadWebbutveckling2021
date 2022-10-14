@@ -1,0 +1,107 @@
+
+
+
+
+.JavascriptSpel-Kontainer {
+    position: absolute;
+    width: 80%;
+    height: 40vh;
+    margin-top: 340vh;
+    text-align: center;
+    border-left: #e2af38 solid 1px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.JavascriptSpel-Kontainer h2 {
+    margin-bottom: 3rem;
+}
+
+.JavascriptSpel-vanster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.JavascriptSpel-hoger {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+
+.Projekt-JavascriptSpel {
+    justify-content: center;
+    min-height: 30vh; 
+    background: url('../../../Assets/bilder/Javascriptspel.jpg'), url('../../../Assets/bilder/mask.jpg');
+    background-blend-mode: screen; 
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    width: 30rem; 
+}
+
+.JavascriptSpel-Streck {
+    position: absolute;
+    top: 70%;
+    height: 1px;
+    width: 100%;
+    background-color: black; 
+    position: relative;
+    opacity: 0.5;
+    margin-bottom: 15rem;
+}
+
+@media (max-width: 414px) {
+    .JavascriptSpel-Kontainer {
+        height: 40vh;
+        top: -60%;
+    }
+
+    .JavascriptSpel-Kontainer h2 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+        
+    }
+    .Projekt-JavascriptSpel {
+        min-height: 5vh; 
+        width: 5rem; 
+        background: url('../../../Assets/mobil-bilder/Javascriptspel-mobil.jpg'), url('../../../Assets/mobil-bilder/mask-mobil.jpg');
+        background-repeat: no-repeat; 
+        background-blend-mode: screen; 
+        background-size: cover;
+        background-position:center;
+    }
+    .JavascriptSpel-hoger p {
+        font-size: 10px;
+    }
+    .JavascriptSpel-hoger p:nth-child(2) {
+        margin-bottom: 5rem;
+    }
+    .JavascriptSpel-Streck {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .JavascriptSpel-Streck {
+        margin-top: 10%; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .JavascriptSpel-Kontainer {
+        margin-top: 320vh;
+        height: 30vh;
+    }
+    .Projekt-JavascriptSpel {
+        min-height: 20vh; 
+        width: 20rem; 
+    }
+    .JavascriptSpel-hoger {
+        font-size: 14px;
+    }
+}
+
+

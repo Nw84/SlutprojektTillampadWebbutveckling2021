@@ -1,0 +1,83 @@
+.moln4-wrapper {
+    position: absolute;
+    top: 410%;
+    left: 55%;
+    opacity: 0.9;
+}
+
+.moln4 {
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+    height: 120px;
+    position: relative;
+    width: 350px;
+}
+
+.moln4::after {
+    background-color: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 100px;
+    height: 100px;
+    left: 50px;
+    top: -50px;
+    width: 100px;
+}
+
+.moln4::before {
+    background-color: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 200px;
+    height: 180px;
+    width: 180px;
+    top: -90px;
+    right: 50px;
+}
+
+@media(min-width:768px) {
+    .moln4-wrapper {
+        top: 200%; 
+        left: 45%;
+        transform: scale(0.8,0.8);
+    }
+}
+
+@media(min-width:1200px) {
+    .moln4-wrapper {
+        top: 465%;
+        left: 50%;
+        transform: scale(1.0,1.0);
+    }
+}
+
+@media(min-width:1400px) {
+    .moln4-wrapper {
+        top: 435%;
+        left: 50%;
+    }
+}
+
+@media(min-width:1536px){
+    .moln4-wrapper {
+        transform: scale(1.4,1.4);
+        top: 440%;
+        left: 65%;
+    }
+}
+
+@media(min-width:1920px){
+    .moln4-wrapper {
+        top: 420%;
+    }
+}
+
+@media(min-width:2400px) {
+    .moln4-wrapper {
+        transform: scale(1.8,1.8);
+        top: 385%; 
+    }
+}

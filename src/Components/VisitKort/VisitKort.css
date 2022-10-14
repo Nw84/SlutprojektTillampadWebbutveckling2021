@@ -1,0 +1,173 @@
+*{
+    box-sizing:border-box
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-visitKort {
+  margin: 0 auto; 
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  perspective: 1000;
+  transform: perspective(1000px);
+  transform-style: preserve-3d;
+  perspective-origin: left;
+  font-family: monospace;
+}
+
+.visitKort {
+  width: 100px;
+  height: 60px;
+  box-shadow: 0 0.5rem 1.1rem rgba(0,0,0,0.3);
+  position: relative; 
+
+  transform: rotate(0deg);
+  transform-origin: 100% 0%;
+  transform-style: preserve-3d;
+  transition: .5s ease-in-out;
+}
+
+.framsida, .baksida {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+
+  backface-visibility: hidden;
+}
+
+.framsida {
+  display: flex;
+  background-image: url('../../Assets/bilder/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}
+
+.framsida h3 {
+   margin: auto; 
+   padding-right: 1rem;
+   font-size: 8px;
+}
+
+
+.baksida {
+  transform: rotateY(-180deg);
+  text-align: center;
+  margin: auto;
+  font-size: 6px;
+  text-decoration: underline #ffc334;
+ 
+}
+
+.wrapper-visitKort:hover .visitKort {
+  transform: rotateY(180deg) translateX(100%) scale(1.2,1.2);
+  cursor: grab;
+}
+
+
+  
+@media(max-width:414px) {
+  .framsida h3 {
+    font-size: 8px;
+ }
+ .baksida {
+   font-size: 6px;
+ }
+}
+
+@media(min-width:768px) {
+  .wrapper-visitKort {
+    left: 68%;
+  }
+  .visitKort {
+    width: 180px;
+    height: 120px;
+  }
+  .framsida h3 {
+    font-size: 10px;
+ }
+ .baksida {
+   font-size: 8px;
+ }
+  
+}
+
+@media(min-width:992px) {
+  .wrapper-visitKort {
+    left: 72%;
+  }
+  .visitKort {
+    width: 220px;
+    height: 140px;
+  }
+  .framsida h3 {
+    font-size: 14px;
+ }
+ .baksida {
+   font-size: 10px;
+ }
+}
+
+
+@media(min-width:1280px) {
+  .visitKort {
+    width: 300px;
+    height: 180px;
+  }
+  .wrapper-visitKort {
+    left: 75%;
+  }
+ 
+}
+
+@media(min-width:1400px) {
+  .wrapper-visitKort {
+    left: 75%;
+  }
+  .framsida h3 {
+    font-size: 15px;
+ }
+ .baksida {
+   font-size: 12px;
+ }
+}
+
+@media(min-width:1536px){
+  .wrapper-visitKort {
+    left: 70%;
+    top: 3%;
+  }
+  .visitKort {
+    width: 280px;
+    height: 170px;
+  }
+  .framsida h3 {
+    font-size: 20px;
+ }
+ .baksida {
+   font-size: 14px;
+ }
+}
+
+@media(min-width:1920px) {
+  .wrapper-visitKort {
+    left: 68%;
+    top: 5%;
+
+  }
+}
+
+@media(min-width:2400px) {
+  .wrapper-visitKort {
+    left: 59%;
+  }
+}

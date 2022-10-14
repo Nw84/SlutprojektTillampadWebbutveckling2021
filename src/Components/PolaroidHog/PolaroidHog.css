@@ -1,0 +1,912 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+    overflow-x: hidden;
+    background-color: white; 
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.Wrapper {
+    display: block;    
+}
+
+/* Bild 1/Miami  */
+
+.polaroid-hog {
+    background-color: white;
+    padding: 0.3rem;;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-hog img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-hog {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-hog {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 6%;
+    left: 6%;
+}
+
+.item-hog .polaroid-hog::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-hog:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(15deg);
+    transition: all 0.35s;
+}
+
+.item-hog:nth-of-type(1n+1) .polaroid-hog::before {
+    transform: rotate(15deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+.item-hog:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-left: 2rem;
+    margin-top: 2rem;
+    transition: all 0.35s;
+    z-index: 20;
+    cursor: grab;
+}
+
+.item-hog:hover .polaroid-hog::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+.item-hog::before, .item-hog::after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+.item-hog::before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.item-hog::after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(7.4deg);
+}
+
+/* Bild 2/Idre Fjall */
+
+.polaroid-bild1 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild1 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild1 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 65%;
+    left: 70%;
+}
+
+.item-bild1 .polaroid-bild1::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild1:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(155deg);
+    transition: all 0.35s;
+}
+
+.item-bild1:nth-of-type(1n+1) .polaroid-bild1::before {
+    transform: rotate(155deg);
+    height: 20%;
+    width: 45%;
+    bottom: 35px;
+    right: 10px;
+    box-shadow: 0 0.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild1:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    transition: all 0.35s;
+    z-index: 25;
+    top: 55%;
+    left: 60%;
+    cursor: grab;
+}
+
+.item-bild1:hover .polaroid-bild1::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Bild 3/Prag */
+
+.polaroid-bild2 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild2 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild2 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 8%;
+    left: 6%;
+}
+
+.item-bild2 .polaroid-bild2::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild2:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(-5deg);
+    transition: all 0.35s;
+}
+
+.item-bild2:nth-of-type(1n+1) .polaroid-bild2::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild2:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    z-index: 25;
+    cursor: grab;
+}
+
+.item-bild2:hover .polaroid-bild2::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+
+/* Bild 4/Key West */
+
+.polaroid-bild3 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild3 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild3 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 24%;
+    left: 62%;
+}
+
+.item-bild3 .polaroid-bild3::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild3:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(1deg);
+    transition: all 0.35s;
+}
+
+.item-bild3:nth-of-type(1n+1) .polaroid-bild3::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild3:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    z-index: 25; 
+    top: 23%;
+    left: 58%;
+    cursor: grab;
+}
+
+.item-bild3:hover .polaroid-bild3::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Bild 5/Gran Canaria */
+
+.polaroid-bild4 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild4 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild4 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.item-bild4 .polaroid-bild4::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild4:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(-25deg);
+    transition: all 0.35s;
+}
+
+.item-bild4:nth-of-type(1n+1) .polaroid-bild4::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild4:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    z-index: 25;
+    cursor: grab;
+}
+
+.item-bild4:hover .polaroid-bild4::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Bild 6/Khao Sok */
+
+.polaroid-bild5 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild5 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild5 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild5 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.item-bild5 .polaroid-bild5::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild5:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(55deg);
+    transition: all 0.35s;
+}
+
+.item-bild5:nth-of-type(1n+1) .polaroid-bild5::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild5:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    top: 22%;
+    cursor: grab;
+}
+
+.item-bild5:hover .polaroid-bild5::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Bild 7/Labadee */
+
+.polaroid-bild6 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild6 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild6 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild6 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 30%;
+    left: 11%;
+}
+
+.item-bild6 .polaroid-bild6::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild6:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(5deg);
+    transition: all 0.35s;
+}
+
+.item-bild6:nth-of-type(1n+1) .polaroid-bild6::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild6:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    z-index: 25;
+    top: 25%;
+    left: 18%;
+    cursor: grab;
+}
+
+.item-bild6:hover .polaroid-bild6::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+/* Bild 8/Ko Thao */
+
+.polaroid-bild7 {
+    background-color: white;
+    padding: 0.3rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+}
+
+.polaroid-bild7 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption-bild7 {
+    font-size: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.item-bild7 {
+    width:20%;
+    display: inline-block;
+    margin-top: 2rem;
+    filter: grayscale(100%);
+    position: absolute;
+    top: 18%;
+    left: 29%;
+}
+
+.item-bild7 .polaroid-bild7::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    transition: all 0.35s;
+}
+
+.item-bild7:nth-of-type(1n+1) {
+    transform: scale(0.8,0.8) rotate(-5deg);
+    transition: all 0.35s;
+}
+
+.item-bild7:nth-of-type(1n+1) .polaroid-bild7::before {
+    transform: rotate(5deg);
+    height: 20%;
+    width: 47%;
+    bottom: 30px;
+    right: 12px;
+    box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+
+
+.item-bild7:hover {
+    filter: none;
+    transform: scale(1.5,1.5) rotate(0deg);
+    margin-top: 10%;
+    transition: all 0.35s;
+    z-index: 25;
+    top: 12%;
+    left: 35%;
+    cursor: grab;
+}
+
+.item-bild7:hover .polaroid-bild7::before {
+    content: "";
+    position: absolute;
+    z-index: -1; 
+    transform: rotate(0deg);
+    height: 90%;
+    width: 90%;
+    bottom: 0%;
+    right: 5%;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+    transition: all 0.35s;
+}
+
+@media(min-width:768px) {
+    .caption-hog {
+        font-size: 12px;
+    }
+    .caption-bild1 {
+        font-size: 12px;
+    }
+    .caption-bild2 {
+        font-size: 12px;
+    }
+    .caption-bild3 {
+        font-size: 12px;
+    }
+    .caption-bild4 {
+        font-size: 12px;
+    }
+    .caption-bild5 {
+        font-size: 12px;
+    }
+    .caption-bild6 {
+        font-size: 12px;
+    }
+    .caption-bild7 {
+        font-size: 12px;
+    }
+    .polaroid-hog {
+        padding: 0.5rem;
+    }
+    .polaroid-bild1 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild2 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild3 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild4 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild5 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild6 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild7 {
+        padding: 0.5rem;
+    }
+    .polaroid-bild7 {
+        padding: 0.5rem;
+    }
+}
+
+@media(min-width:992px) {
+    .item-hog {
+        width:20%;
+    }
+    .item-bild1 {
+        width:20%;
+        
+    }
+    .item-bild2 {
+        width:20%;
+        
+    }
+    .item-bild3 {
+        width:20%;
+        
+    }
+    .item-bild4 {
+        width:20%;
+        
+    }
+    .item-bild5 {
+        width:20%;
+        
+    }
+    .item-bild6 {
+        width:20%;
+        
+    }
+    .item-bild7 {
+        width:20%;   
+    }  
+    .polaroid-hog {
+        padding: 1rem;
+    }
+    .polaroid-bild1 {
+        padding: 1rem;
+    }
+    .polaroid-bild2 {
+        padding: 1rem;
+    }
+    .polaroid-bild3 {
+        padding: 1rem;
+    }
+    .polaroid-bild4 {
+        padding: 1rem;
+    }
+    .polaroid-bild5 {
+        padding: 1rem;
+    }
+    .polaroid-bild6 {
+        padding: 1rem;
+    }
+    .polaroid-bild7 {
+        padding: 1rem;
+    }
+    .polaroid-bild7 {
+        padding: 1rem;
+    }
+    .item-hog:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild1:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild2:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild3:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild4:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild5:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild6:hover {
+        transform: scale(1.2,1.2);
+    }
+    .item-bild7:hover {
+        transform: scale(1.2,1.2);
+    } 
+}
+
+@media(min-width:1200px) {
+    .item-hog {
+        width:17%;
+    }
+    .item-bild1 {
+        width:17%;
+    }
+    .item-bild2 {
+        width:17%;
+    }
+    .item-bild3 {
+        width:17%;
+    }
+    .item-bild4 {
+        width:17%;
+    }
+    .item-bild5 {
+        width:17%;
+    }
+    .item-bild6 {
+        width:17%;
+    }
+    .item-bild7 {
+        width:17%;
+    }  
+    
+    .caption-hog {
+        font-size: 14px;
+    }
+    .caption-bild1 {
+        font-size: 14px;
+    }
+    .caption-bild2 {
+        font-size: 14px;
+    }
+    .caption-bild3 {
+        font-size: 14px;
+    }
+    .caption-bild4 {
+        font-size: 14px;
+    }
+    .caption-bild5 {
+        font-size: 14px;
+    }
+    .caption-bild6 {
+        font-size: 14px;
+    }
+    .caption-bild7 {
+        font-size: 14px;
+    }
+
+    .item-hog:hover {
+        transform: scale(1.4,1.4);
+    }
+    .item-bild1:hover {
+        transform: scale(1.4,1.4);
+    }
+    .item-bild2:hover {
+        transform: scale(1.4,1.4);
+        top: 2%;
+        left: 8%;
+    }
+    .item-bild3:hover {
+        transform: scale(1.4,1.4);
+        top: 15%;
+        left: 58%;
+    }
+    .item-bild4:hover {
+        transform: scale(1.4,1.4);
+        top: 5%;
+        left: 12%;
+    }
+    .item-bild5:hover {
+        transform: scale(1.4,1.4);
+        top: 20%;
+    }
+    .item-bild6:hover {
+        transform: scale(1.4,1.4);
+        top: 18%;
+        left: 17%;
+    }
+    .item-bild7:hover {
+        transform: scale(1.4,1.4);
+        top: 8%;
+        left: 33%;
+    } 
+}
+
+@media(min-width:1536px) {
+    .polaroid-hog {
+        padding: 1.6rem;
+    }
+    .polaroid-bild1 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild2 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild3 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild4 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild5 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild6 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild7 {
+        padding: 1.6rem;
+    }
+    .polaroid-bild7 {
+        padding: 1.6rem;
+    }
+}
+
+@media(min-width:1920px) {
+.caption-hog {
+    font-size: 24px;
+}
+.caption-bild1 {
+    font-size: 24px;
+}
+.caption-bild2 {
+    font-size: 24px;
+}
+.caption-bild3 {
+    font-size: 24px;
+}
+.caption-bild4 {
+    font-size: 24px;
+}
+.caption-bild5 {
+    font-size: 24px;
+}
+.caption-bild6 {
+    font-size: 24px;
+}
+.caption-bild7 {
+    font-size: 24px;
+}
+
+}

@@ -1,0 +1,194 @@
+.Ovre-Sektion {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.Kontainer-inre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20vh;
+
+}
+
+.Kolumn-vanster {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    margin-bottom: 20rem;
+    margin-left: 20%;
+}
+
+.Kolumn-vanster h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.6rem;
+    text-decoration: underline 2px #ffd268;
+}
+
+.underRubrik {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.Kolumn-hoger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.Balong1 {
+    position: absolute;
+    left: 30%;
+    top: -40%;
+}
+
+.Bitcoin {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+}
+
+.Ethereum {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+
+.Nedre-Sektion {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.Nedre-Streck {
+    position: absolute;
+    top: -20%;
+    height: 1px;
+    width: 90%;
+    background-color: black; 
+    position: relative;
+    opacity: 0.5;
+}
+
+@media (max-width: 414px) {
+    .Ovre-Sektion {
+        height: 40vh;
+    }
+    .Kolumn-vanster h1{
+        font-size: 24px ;
+    }
+    .Nedre-Streck {
+        margin-top: 30%;
+    }
+    .Balong1 {
+        margin-left: -5%;
+        margin-top: -2rem;
+    }
+    .Bitcoin {
+        margin-left: 0%;
+        margin-top: -10rem;
+        transform: scale(0.6,0.6);
+    }
+    .Ethereum {
+        margin-left: -5%;
+        margin-top: -5.5rem;
+        transform: scale(0.6,0.6);
+    }
+}
+
+@media (max-width: 768px) {
+    .Kontainer-inre {
+        display: flex;
+        flex-direction: column;
+    }
+    .Kolumn-vanster {
+        margin-top: -5rem;
+        margin-left: 0;
+    }
+    .Kolumn-vanster h1 {
+        margin-top: 5rem;
+       
+    }
+    .Kolumn-vanster p {
+        font-size: 0.8rem;
+    }
+
+    .Balong1 {
+        top:  -35rem;
+        left: 40%;
+    }
+    
+    .Bitcoin {
+        position: absolute;
+        left: 15%;
+        top: -245%;
+    }
+    
+    .Ethereum {
+        position: absolute;
+        left: 65%;
+        top: -85%;
+    }
+}
+
+
+@media (min-width: 1536px) {
+    .Kolumn-vanster {
+       margin-left: 5%;
+    }
+    
+    .Balong1 {
+        left: 35%;
+        top: -30%;
+    }
+    
+    .Bitcoin {
+        left: 5%;
+        top: 35%;
+        transform: scale(1.5, 1.5);
+    }
+    
+    .Ethereum {
+        left: 65%;
+        top: 26%;
+        transform: scale(1.5, 1.5);
+    }
+    
+}
+
+@media (min-width: 1648px) {
+    .Kolumn-vanster h1 {
+        font-size: 4rem;
+        text-decoration: underline 3px #ffd268;
+    }
+    
+}
+
+@media(min-width:1920px) {
+    .Kolumn-vanster {
+        margin-left: 0%;
+    }
+    .Bitcoin {
+        left: 5%;
+        top: 35%;
+        transform: scale(1.8, 1.8);
+    }
+    
+    .Ethereum {
+        left: 80%;
+        top: 30%;
+        transform: scale(1.8, 1.8);
+    }
+}

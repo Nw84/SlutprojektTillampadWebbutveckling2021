@@ -1,0 +1,112 @@
+
+.Balong {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100% 100% 15% 100%;
+    margin: 0 0 0 25px;
+    transform: rotateZ(45deg);
+    position: fixed;
+    bottom: calc(-1 * 15vmax);
+    left: 0;
+    background-color: #61DBFB;
+    z-index: 900;
+    box-shadow: 0 0px 5px rgba(104, 104, 104, 0.8);
+}
+
+.Balong::before {
+    content: "";
+    width: 10%;
+    height: 25%;
+    background: radial-gradient(circle, rgba(255,255,255,1)0%, rgba(255,255,255, .1) 100%);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    border-radius: 100%;
+}
+
+.Balong::after {
+    content: "";
+    width: 10%;
+    height: 3%;
+    background-color: inherit;
+    position: absolute;
+    left: 92%;
+    top: 96%;
+    border-radius: 22%;
+    transform: rotateZ(-45deg);
+}
+
+.snore {
+    position: absolute;
+    background-color: black;
+    width: 1px;
+    height: 4rem;
+    transform-origin: top-center;
+    transform: rotateZ(135deg);
+    top: 7.3rem;
+    left: 9.2rem;
+    box-shadow: 0 0px 2px rgba(104, 104, 104, 0.8);
+}
+
+.ikon {
+    font-size: 80px;
+    z-index: 1000;
+    color: white;
+    top: 1.8rem;
+    left: 1.8rem;
+    position: absolute;
+    opacity: 0.8;
+}
+
+@media (max-width: 414px) {
+    .Balong {
+        width: 6rem;
+        height: 6rem;
+    }
+    .snore {
+        top: 5.4rem;
+        left: 6.8rem;
+        height: 3rem;
+    }
+    .ikon {
+        font-size: 50px;
+        top: 1.7rem;
+        left: 1.7rem;
+    }
+}
+
+@media(min-width:1536px) {
+    .Balong {
+        width: 12rem;
+        height: 12rem;
+    }
+    .snore {
+        top: 10.4rem;
+        left: 14.3rem;
+        height: 8rem;
+    }
+    
+    .ikon {
+        font-size: 110px;
+        top: 2.7rem;
+        left: 2.9rem;
+    }
+}
+
+@media(min-width:1920px) {
+    .Balong {
+        width: 18rem;
+        height: 18rem;
+    }
+    .snore {
+        top: 16.4rem;
+        left: 20.3rem;
+        width: 2px;
+    }
+    
+    .ikon {
+        font-size: 150px;
+        top: 4.3rem;
+        left: 4.5rem;
+    }
+}

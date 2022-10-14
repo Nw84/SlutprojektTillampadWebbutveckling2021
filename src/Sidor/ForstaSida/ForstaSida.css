@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+/*   Desktop versionen   */
+
+.Parallax {
+    display: flex;
+    justify-content: center;
+}
+
+.Parallax-bakgrund {
+    width: 100%;
+    height: 1380px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    background-image: url('../../Assets/parallax-bilder/woody.jpg');
+    z-index: 1;
+    box-shadow: 0 0.2rem 0.9rem rgba(0,0,0,0.2);
+}
+
+.Parallax-forgrund {
+    width: 100%;
+    height: 1200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.9;
+    background-image: url('../../Assets/parallax-bilder/moln.jpg'); 
+    z-index: -5;
+   
+}
+
+.Parallax-innehall {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.Parallax-info {
+    position: absolute;
+    width: 90%;
+    margin-top: 150%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+}
+
+.Parallax-kompetens {
+    position: absolute;
+    width: 90%;
+    margin-top: 260%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+}
+
+.Parallax-kontakt {
+    position: absolute;
+    width: 90%;
+    margin-top: 370%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+}
+
+.Parallax-Penna {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+.Parallax-Anteckning {
+    width: 100%;
+    position: absolute;
+    top: 58%;
+}
+
+/*   Mobil versionen   */
+
+.Mobil-forstasida {
+    justify-content: center;
+    display: flex; 
+}
+
+.Mobil-bakgrund {
+    width: 100%;
+    height: 920px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: absolute;
+    background-image: url('../../Assets/parallax-bilder/woody-mobil.jpg');
+    z-index: 1;
+    box-shadow: 0 0.2rem 0.9rem rgba(0,0,0,0.2);
+}
+
+.Mobil-forgrund {
+    width: 100%;
+    height: 2100px;
+    margin-top: 920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.9;
+    background-image: url('../../Assets/parallax-bilder/moln-mobil.jpg'); 
+    z-index: -5;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.Mobil-innehall {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.Mobil-info {
+    position: absolute;
+    width: 90%;
+    margin-top: 70%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+    margin-left: 5%;
+}
+
+.Mobil-kompetens {
+    position: absolute;
+    width: 90%;
+    margin-top: 250%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+    margin-left: 5%;
+}
+
+.Mobil-kontakt {
+    position: absolute;
+    width: 90%;
+    margin-top: 410%;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+    margin-left: 5%;
+}
+
+.Mobil-Penna {
+    width: 100%;
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: 42%;
+    left: 20%;
+}
+
+.Mobil-Anteckning {
+    width: 100%;
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: 48%;
+}
+
+.Mobil-moln1 {
+    position: absolute;
+    top: 5%;
+    transform: scale(0.5,0.5);
+}
+
+.Mobil-moln2 {
+    position: absolute;
+    top: 37%;
+    left: 45%;
+    transform: scale(0.6,0.6);
+}
+
+.Mobil-moln3 {
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    transform: scale(0.6,0.6);
+}
+
+.Mobil-moln4 {
+    position: absolute;
+    top: 89%;
+    left: 25%;
+    transform: scale(0.6,0.6);
+}
+
+@media(min-width:768px) {
+    .Mobil-bakgrund {
+        height: 1240px;
+    }
+    .Mobil-forgrund {
+        margin-top: 1240px;
+        height: 3100px;
+    }
+    .Mobil-info {
+        margin-top: 50%;
+    }
+    
+    .Mobil-kompetens {
+        margin-top: 180%;
+    }
+    
+    .Mobil-kontakt {
+        margin-top: 280%;
+    }
+
+    .Mobil-Penna {
+        transform: scale(0.8,0.8);
+        top: 52%;
+        left: 12%;
+    }
+    
+    .Mobil-Anteckning {
+        transform: scale(0.8,0.8);
+        top: 60%;
+    }
+
+
+    .Mobil-moln1 {
+        position: absolute;
+        top: 5%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln2 {
+        position: absolute;
+        top: 37%;
+        left: 45%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln3 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln4 {
+        position: absolute;
+        top: 89%;
+        left: 25%;
+        transform: scale(0.8,0.8);
+    }
+}
+
+@media(min-width:992px) {
+    .Mobil-bakgrund {
+        height: 1460px;
+    }
+    .Mobil-forgrund {
+        margin-top: 1460px;
+        height: 3300px;
+    }
+    .Mobil-info {
+        margin-top: 40%;
+    }
+    
+    .Mobil-kompetens {
+        margin-top: 140%;
+    }
+    
+    .Mobil-kontakt {
+        margin-top: 225%;
+    }
+
+    .Mobil-Penna {
+        transform: scale(0.8,0.8);
+        top: 56%;
+        left: 8%;
+    }
+    
+    .Mobil-Anteckning {
+        transform: scale(0.8,0.8);
+        top: 60%;
+    }
+
+
+    .Mobil-moln1 {
+        position: absolute;
+        top: 5%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln2 {
+        position: absolute;
+        top: 37%;
+        left: 45%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln3 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        transform: scale(0.8,0.8);
+    }
+    
+    .Mobil-moln4 {
+        position: absolute;
+        top: 89%;
+        left: 25%;
+        transform: scale(0.8,0.8);
+    }
+}
+
+@media(min-width:1200px) {
+    .Parallax-bakgrund {
+        height: 1280px;   
+    }
+    .Parallax-forgrund {
+        height: 1040px;
+    }
+
+    .Parallax-info {
+        margin-top: 135%;
+    }
+    
+    .Parallax-kompetens {
+        margin-top: 255%;
+    }
+    
+    .Parallax-kontakt {
+        margin-top: 375%;
+    }
+
+    .Parallax-Penna {
+        top: 50%;
+        left: 4%;
+    }
+
+    .Parallax-Anteckning {
+        top: 55%;
+    }
+    
+}
+
+@media(min-width:1400px) {
+    .Parallax-bakgrund {
+        height: 1500px;   
+    }
+    .Parallax-forgrund {
+        height: 1220px;
+    }
+
+    .Parallax-info {
+        margin-top: 155%;
+    }
+    
+    .Parallax-kompetens {
+        margin-top: 270%;
+    }
+    
+    .Parallax-kontakt {
+        margin-top: 400%;
+    }
+
+    
+}
+
+@media(min-width:1536px) {
+    .Parallax-forgrund {
+        height: 1220px;
+    }
+
+    .Parallax-info {
+        margin-top: 140%;
+    }
+    
+    .Parallax-kompetens {
+        margin-top: 250%;
+    }
+    
+    .Parallax-kontakt {
+        margin-top: 365%;
+    }
+    
+    .Parallax-Penna {
+        transform: scale(1.0,1.0);
+        top: 54%;
+        left: 5%;
+    }
+    .Parallax-Anteckning {
+        transform: scale(1.0,1.0);
+        top: 58%;
+    }
+}
+
+@media(min-width:1920px) {
+    .Parallax-forgrund {
+        height: 1460px;
+    }
+
+    .Parallax-info {
+        margin-top: 125%;
+    }
+    
+    .Parallax-kompetens {
+        margin-top: 235%;
+    }
+    
+    .Parallax-kontakt {
+        margin-top: 345%;
+    }
+    
+    .Parallax-Penna {
+        top: 60%;
+        left: 2%;
+        transform: scale(1.2,1.2);
+    }
+    .Parallax-Anteckning {
+        top: 65%;
+        transform: scale(1.2,1.2);
+    }
+}
+
+@media(min-width:2400px){
+    .Parallax-bakgrund {
+        height: 1900px;   
+    }
+    .Parallax-forgrund {
+        height: 1940px;
+    }
+
+    .Parallax-info {
+        margin-top: 120%;
+    }
+    
+    .Parallax-kompetens {
+        margin-top: 220%;
+    }
+    
+    .Parallax-kontakt {
+        margin-top: 320%;
+    }
+
+    .Parallax-Penna {
+        transform: scale(1.6,1.6);
+        top: 65%;
+        left: 2%;
+    }
+
+    .Parallax-Anteckning {
+        transform: scale(1.6,1.6);
+        top: 70%;
+    }
+}
+
+
+

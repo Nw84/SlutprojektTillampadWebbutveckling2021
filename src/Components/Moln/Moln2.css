@@ -1,0 +1,75 @@
+.moln2-wrapper {
+    position: absolute;
+    top: 255%;
+    left: 60%;
+    opacity: 0.9;
+}
+
+.moln2 {
+    background-color: white;
+    border-radius: 80px;
+    box-shadow: 0 8px 5xp rgba(0,0,0,0.1);
+    height: 120px;
+    position: relative;
+    width: 320px;
+}
+
+.moln2::after {
+    background-color: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 80px;
+    height: 100px;
+    left: 170px;
+    top: -40px;
+    width: 90px;
+}
+
+.moln2::before {
+    background-color: white;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 160px;
+    height: 160px;
+    width: 160px;
+    top: -70px;
+    right: 120px;
+}
+
+@media(min-width:768px) {
+    .moln2-wrapper {
+        top: 235%;
+        left: 57%;
+        transform: scale(0.8,0.8);
+    }
+}
+
+@media(min-width:1200px) {
+    .moln2-wrapper {
+        top: 265%;
+        left: 65%;
+        transform: scale(1.0,1.0);
+    }
+}
+
+@media(min-width:1536px){
+    .moln2-wrapper {
+        transform: scale(1.2,1.2);
+        left: 75%
+    }
+}
+
+@media(min-width:1920px){
+    .moln2-wrapper {
+        top: 245%;
+    }
+}
+
+@media(min-width:2400px) {
+    .moln2-wrapper {
+        transform: scale(1.8,1.8);
+        top: 225%;
+    }
+}

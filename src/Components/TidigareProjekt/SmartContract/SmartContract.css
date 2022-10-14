@@ -1,0 +1,98 @@
+.Smart-Kontainer {
+    position: absolute;
+    width: 80%;
+    height: 40vh;
+    margin-top: 40vh; 
+    text-align: center;
+    border-left: #e2af38 solid 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Smart-Kontainer h2 {
+    margin-bottom: 3rem;
+}
+
+.Smart-vanster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Smart-hoger {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+
+.Projekt-Smart {
+    justify-content: center;
+    min-height: 30vh; 
+    background: url('../../../Assets/bilder/solidity.jpg'), url('../../../Assets/bilder/mask.jpg');
+    background-blend-mode: screen; 
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+    width: 35rem; 
+}
+
+.Smart-Streck {
+    position: absolute;
+    top: 60%;
+    height: 1px;
+    width: 100%;
+    background-color: black; 
+    position: relative;
+    opacity: 0.5;
+}
+
+@media (max-width: 414px) {
+    .Smart-Kontainer {
+        height: 40vh;
+    }
+    .Smart-Kontainer h2 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+    .Projekt-Smart {
+        min-height: 5vh; 
+        width: 5rem; 
+    }
+    .Smart-hoger p {
+        font-size: 10px;
+    }
+    .Smart-Streck {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .Smart-Streck {
+        margin-top: 20%; 
+    }
+    .Projekt-Smart {
+        background: url('../../../Assets/mobil-bilder/solidity-mobil.jpg'), url('../../../Assets/mobil-bilder/mask-mobil.jpg');
+        background-repeat: no-repeat; 
+        background-blend-mode: screen; 
+        background-size: cover;
+        background-position:center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Smart-Kontainer {
+        height: 30vh;
+    }
+    .Projekt-Smart {
+        min-height: 20vh; 
+        width: 20rem; 
+    }
+    .Smart-hoger {
+        font-size: 14px;
+    }
+
+    .Smart-Streck {
+        top: 40%; 
+    }
+}

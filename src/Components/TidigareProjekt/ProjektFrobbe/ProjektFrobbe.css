@@ -1,0 +1,110 @@
+
+
+
+
+.Frobbe-Kontainer {
+    position: absolute;
+    width: 80%;
+    height: 40vh;
+    margin-top: 180vh;
+    text-align: center;
+    border-right: #e2af38 solid 1px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Frobbe-Kontainer h2 {
+    margin-bottom: 3rem;
+}
+
+.Frobbe-vanster {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.Frobbe-hoger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Projekt-Frobbe {
+    justify-content: center;
+    min-height: 30vh; 
+    background: url('../../../Assets/bilder/reklambild.jpg'), url('../../../Assets/bilder/mask2.jpg');
+    background-blend-mode: screen; 
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat; 
+    width: 30rem; 
+}
+
+.Frobbe-Streck {
+    position: absolute;
+    top: 70%;
+    height: 1px;
+    width: 100%;
+    background-color: black; 
+    position: relative;
+    opacity: 0.5;
+}
+
+@media (max-width: 414px) {
+    .Frobbe-Kontainer {
+        height: 40vh;
+        top: -10%;
+    }
+    .Frobbe-Kontainer h2 {
+        font-size: 16px;
+        margin-bottom: 3rem;
+        
+    }
+    .Projekt-Frobbe {
+        min-height: 5vh; 
+        width: 5rem; 
+    }
+    .Frobbe-vanster p {
+        font-size: 10px;
+    }
+    .Frobbe-Streck {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .Frobbe-Kontainer {
+        height: 50vh;
+    }
+    .Projekt-Frobbe {
+        margin-top: 5%;
+        background: url('../../../Assets/mobil-bilder/reklambild-mobil.jpg'), url('../../../Assets/mobil-bilder/mask2-mobil.jpg');
+        background-repeat: no-repeat; 
+        background-blend-mode: screen; 
+        background-size: cover;
+        background-position:center;
+    }
+    .Frobbe-Streck {
+        margin-top: 30%; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .Frobbe-Kontainer {
+        height: 30vh;
+    }
+    .Projekt-Frobbe {
+        min-height: 20vh; 
+        width: 20rem; 
+    }
+    .Frobbe-hoger {
+        font-size: 14px;
+    }
+    .Frobbe-Streck {
+        top: 50%; 
+    }
+}
+
+
+

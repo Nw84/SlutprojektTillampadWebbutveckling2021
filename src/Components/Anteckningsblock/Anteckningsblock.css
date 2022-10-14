@@ -1,0 +1,72 @@
+
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.papper {
+     position: absolute;
+     height: 550px;
+     width: 450px;
+     background: white; 
+     margin: -275px -225px;
+     left: 40%;
+     top: 52%;
+     box-shadow: 0px 0px 5px 0px #888;
+     
+}
+
+.text :first-of-type{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px ;
+}
+
+.papper::before {
+    content: "";
+    position: absolute;
+    left: 45px;
+    height: 100%;
+    width: 2px;
+    background: rgba(255,0,0,0.4);
+}
+
+.linjer {
+    margin-top: 40px;
+    height: calc(100% - 40px);
+    width: 100%;
+    background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+
+.text {
+    position: absolute;
+    top: 65px;
+    left: 55px;
+    bottom: 10px;
+    right: 10px;
+    line-height: 25px;
+    overflow: hidden;
+    outline: none;
+    opacity: 0.9;
+}
+
+.hal {
+    position: absolute;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0px gray;
+}
+
+.hal-1 {
+    top: 10%;
+}
+.hal-2 {
+    top: 50%;
+}
+.hal-3 {
+    bottom: 10%;
+}
